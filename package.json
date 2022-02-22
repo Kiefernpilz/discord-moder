@@ -1,0 +1,42 @@
+{
+  "name": "dtox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\"",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/torislav/dtox.git"
+  },
+  "author": "tori#1551",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/torislav/dtox/issues"
+  },
+  "homepage": "https://gitlab.com/torislav/dtox#readme",
+  "dependencies": {
+    "@discordjs/voice": "^0.7.2",
+    "axios": "^0.21.1",
+    "canvas": "^2.8.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.0",
+    "node-cron": "^3.0.0",
+    "typeorm": "^0.3.0-alpha.24"
+  },
+  "devDependencies": {
+    "@types/node-cron": "^2.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "concurrently": "^6.2.0",
+    "eslint": "^7.30.0",
+    "nodemon": "^2.0.9",
+    "typescript": "^4.3.5"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "env": {
+    "es2017": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "tsconfigRootDir": "."
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "space-infix-ops": "error",
+    "quotes": [2, "single", {
+      "avoidEscape": true
+    }],
+    "semi": [2, "always"],
+    "object-curly-spacing": [2, "always"],
+    "@typescript-eslint/restrict-template-expressions": 0
+  }
+}
